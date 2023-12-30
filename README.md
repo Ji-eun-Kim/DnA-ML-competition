@@ -25,7 +25,7 @@
 <br/>
 
 ## 4. 프로젝트 설명 
-<img width="459" alt="dna_ml competiton" src="https://github.com/Ji-eun-Kim/DnA-ML-competition/assets/124686375/51a35b5d-b4bb-4136-8e81-2edf8833c0c6">  <br>  
+![Untitled1](https://github.com/Ji-eun-Kim/DnA-ML-competition/assets/124686375/51a35b5d-b4bb-4136-8e81-2edf8833c0c6)  
 본 대회는 신용카드 사용자들의 개인 신상정보 데이터로 사용자의 신용카드 대금 연체 정도를 예측하는 대회다. 종속변수는 사용자의 신용도를 0, 1, 2의 값으로 표현한 credit 열이었다. 분류모델 중, 높은 성능을 기대할 수 있는 트리 기반의 randomforest, LGBM, CatBoost, XGB 모델을 생성하고 이들을 앙상블 하여 성능을 높이는 전략을 세워 본 대회를 시작하였다.
 
    전처리의 경우, 데이터의 형태에 따라 전처리를 수행하였다. 수치형 변수의 이상치 처리 부분에서 음수를 지니는 columns(출생일, 신용카드 발급 월)는 양수로 바꾸어 주었으며, 연간 소득의 경우, 표준정규분포로 전환 후, -3 이하 및 3 이상인 값들을 clip 해주었다.  범주형 변수의 경우, 휴대전화 여부 column이 1로 이루어져 있어 열을 삭제하였고, 직업 유형 column에서 적히지 않은 칸은 unemployed로 처리하였다. 
